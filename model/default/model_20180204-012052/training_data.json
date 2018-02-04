@@ -1,0 +1,1242 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "montreal",
+            "entity": "city"
+          }
+        ],
+        "text": "what's the weather in montreal?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "new york",
+            "entity": "city"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "value": "hot",
+            "entity": "descriptor"
+          }
+        ],
+        "text": "how hot is it in new york?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": " boston",
+            "entity": "city"
+          }
+        ],
+        "text": "what's the temperature in boston?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 18,
+            "end": 27,
+            "value": "vancouver",
+            "entity": "city"
+          },
+          {
+            "start": 4,
+            "end": 8,
+            "value": "cold",
+            "entity": "descriptor"
+          }
+        ],
+        "text": "how cold is it in vancouver?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 12,
+            "value": "chilly",
+            "entity": "descriptor"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "chicago",
+            "entity": "city"
+          }
+        ],
+        "text": "is it chilly in chicago?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "los angeles",
+            "entity": "city"
+          },
+          {
+            "start": 6,
+            "end": 11,
+            "value": "sunny",
+            "entity": "descriptor"
+          }
+        ],
+        "text": "is it sunny in los angeles"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": " denver",
+            "entity": "city"
+          }
+        ],
+        "text": "what's the weather like in denver?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "what's the temperature?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "what is the weather?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "how is it like today?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "how is the weather like?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "what's it like outside?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "should I wear a coat?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "should I bring an umbrella?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "am I going to melt?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "how bad is it outside?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "how is the day today?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "is it beautiful outside today?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 21,
+            "end": 34,
+            "value": "san francisco",
+            "entity": "city"
+          }
+        ],
+        "text": "what are the news in san francisco?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 21,
+            "end": 33,
+            "value": "philadelphia",
+            "entity": "city"
+          }
+        ],
+        "text": "what is happening in philadelphia?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 14,
+            "end": 24,
+            "value": "washington",
+            "entity": "city"
+          }
+        ],
+        "text": "what is up in washington?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "miami",
+            "entity": "city"
+          }
+        ],
+        "text": "what is going on in miami?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "give me the headlines"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "give me the news"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "show me the news"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "ottawa",
+            "entity": "city"
+          }
+        ],
+        "text": "what is new in ottawa?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "what is happening"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "what is going on"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "nashville",
+            "entity": "city"
+          }
+        ],
+        "text": "what are the news in nashville?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "winnipeg",
+            "entity": "city"
+          }
+        ],
+        "text": "what happened in winnipeg?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "las vegas",
+            "entity": "city"
+          }
+        ],
+        "text": "what's up with las vegas?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "austin",
+            "entity": "city"
+          }
+        ],
+        "text": "what's shakin in austin?"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "what is important right now?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [],
+        "text": "weather"
+      },
+      {
+        "intent": "get_news",
+        "entities": [],
+        "text": "news"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "tampa",
+            "entity": "city"
+          }
+        ],
+        "text": "weather in tampa"
+      },
+      {
+        "intent": "get_news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "san diego",
+            "entity": "city"
+          }
+        ],
+        "text": "news in san diego"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "raining",
+            "entity": "descriptor"
+          }
+        ],
+        "text": "is it raining in seattle"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "french",
+            "entity": "language"
+          }
+        ],
+        "text": "translate this to french"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 29,
+            "end": 47,
+            "value": "\"I want some beer\"",
+            "entity": "text_to_translate"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "value": "german",
+            "entity": "language"
+          }
+        ],
+        "text": "how do I say this in german: \"I want some beer\""
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 8,
+            "end": 31,
+            "value": "\"where is the washroom\"",
+            "entity": "text_to_translate"
+          },
+          {
+            "start": 35,
+            "end": 42,
+            "value": "italian",
+            "entity": "language"
+          }
+        ],
+        "text": "what is \"where is the washroom\" in italian?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [],
+        "text": "translate"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "spanish",
+            "entity": "language"
+          }
+        ],
+        "text": "how do I say it in spanish?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 32,
+            "end": 43,
+            "value": "\"I am lost\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "how would I say this in arabic: \"I am lost\""
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "\"hello\"",
+            "entity": "text_to_translate"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "italian",
+            "entity": "language"
+          }
+        ],
+        "text": "how do you say \"hello\" in italian?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "german",
+            "entity": "language"
+          }
+        ],
+        "text": "translate to german"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "english",
+            "entity": "language"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "value": "\"je taime\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "what is \"je taime\" in english?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 40,
+            "end": 46,
+            "value": "arabic",
+            "entity": "language"
+          },
+          {
+            "start": 14,
+            "end": 36,
+            "value": "\"hello my good friend\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "how do we say \"hello my good friend\" in arabic?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 10,
+            "end": 48,
+            "value": "\"voulez-vous coucher avec moi ce soir\"",
+            "entity": "text_to_translate"
+          },
+          {
+            "start": 52,
+            "end": 60,
+            "value": "english",
+            "entity": "language"
+          }
+        ],
+        "text": "translate \"voulez-vous coucher avec moi ce soir\" to english please"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "italian",
+            "entity": "language"
+          }
+        ],
+        "text": "how do I say this in italian?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "\"bonjour\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "what does \"bonjour\" mean?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "english",
+            "entity": "language"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "\"merde\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "what does \"merde\" mean in english?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "french",
+            "entity": "language"
+          },
+          {
+            "start": 14,
+            "end": 22,
+            "value": "\"hello\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "how do you say \"hello\" in french?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "english",
+            "entity": "language"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "\"rojo\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "what does \"rojo\" mean in english?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "english",
+            "entity": "language"
+          },
+          {
+            "start": 20,
+            "end": 33,
+            "value": "\"i love you\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "how do you translate \"i love you\" to english?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "\"bonne nuit\"",
+            "entity": "text_to_translate"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "english",
+            "entity": "language"
+          }
+        ],
+        "text": "translate \"bonne nuit\" to english please"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 41,
+            "end": 49,
+            "value": "romanian",
+            "entity": "language"
+          },
+          {
+            "start": 15,
+            "end": 37,
+            "value": "\"i can't believe this\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "how do you say \"i can't believe this\" in romanian?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "greek",
+            "entity": "language"
+          },
+          {
+            "start": 11,
+            "end": 23,
+            "value": "\"i hate you\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "how to say \"i hate you\" in greek?"
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 10,
+            "end": 30,
+            "value": "\"I can't believe it\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "translate \"I can't believe it\" "
+      },
+      {
+        "intent": "get_translation",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "french",
+            "entity": "language"
+          },
+          {
+            "start": 7,
+            "end": 19,
+            "value": "\"my name is\"",
+            "entity": "text_to_translate"
+          }
+        ],
+        "text": "what's \"my name is\" in french?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what is this?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "who are you?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what can you do?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how does this work?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "who are you?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how does this work?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how do you work?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how does this function?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how do you function?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what are you?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what can you do?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how does this thing work?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "i don't understand"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "i don't get this"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "who are you?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "who are u?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what can you do?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "why do you exist?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what is your purpose?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what is the goal of this?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how does this work?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what is the goal of this"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what is this"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "how do you work?"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "list all you can do"
+      },
+      {
+        "intent": "get_what",
+        "entities": [],
+        "text": "what are the possibilties"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "wassup"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hiya"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hello robot"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hey how are you!"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "greetings!"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "greetings earthling"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hello what is your name?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 33,
+            "end": 39,
+            "value": "mcgill",
+            "entity": "origin"
+          },
+          {
+            "start": 16,
+            "end": 27,
+            "value": "bell centre",
+            "entity": "destination"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "value": "train",
+            "entity": "method_of_transport"
+          }
+        ],
+        "text": "how do I get to bell centre from mcgill by train?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 40,
+            "end": 50,
+            "value": "guy street",
+            "entity": "destination"
+          },
+          {
+            "start": 20,
+            "end": 36,
+            "value": "st-elizabeth st.",
+            "entity": "origin"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "value": "drive",
+            "entity": "method_of_transport"
+          }
+        ],
+        "text": "how do i drive from st-elizabeth st. to guy street"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "main street",
+            "entity": "destination"
+          }
+        ],
+        "text": "how do i get to main street?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 43,
+            "end": 46,
+            "value": "bus",
+            "entity": "method_of_transport"
+          },
+          {
+            "start": 17,
+            "end": 39,
+            "value": "universite de montreal",
+            "entity": "destination"
+          }
+        ],
+        "text": "how can i get to universite de montreal by bus?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 44,
+            "end": 47,
+            "value": "car",
+            "entity": "method_of_transport"
+          },
+          {
+            "start": 29,
+            "end": 40,
+            "value": "bell centre",
+            "entity": "destination"
+          }
+        ],
+        "text": "give me directions to get to bell centre by car"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "beta bloc",
+            "entity": "destination"
+          },
+          {
+            "start": 29,
+            "end": 42,
+            "value": "guy-concordia",
+            "entity": "origin"
+          }
+        ],
+        "text": "how to get to beta bloc from guy-concordia?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 43,
+            "end": 46,
+            "value": "bus",
+            "entity": "method_of_transport"
+          },
+          {
+            "start": 17,
+            "end": 39,
+            "value": "2150 university street",
+            "entity": "destination"
+          }
+        ],
+        "text": "how can i get to 2150 university street by bus?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 24,
+            "end": 47,
+            "value": "103 concordia boulevard",
+            "entity": "origin"
+          },
+          {
+            "start": 51,
+            "end": 69,
+            "value": "44 thunderstorm st",
+            "entity": "destination"
+          },
+          {
+            "start": 73,
+            "end": 87,
+            "value": "public transit",
+            "entity": "method_of_transport"
+          }
+        ],
+        "text": "give me directions from 103 concordia boulevard to 44 thunderstorm st by public transit"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 17,
+            "end": 30,
+            "value": "476 delaurier",
+            "entity": "destination"
+          }
+        ],
+        "text": "how can i get to 476 delaurier?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "mcgill",
+            "entity": "destination"
+          },
+          {
+            "start": 26,
+            "end": 37,
+            "value": "33 mctavish",
+            "entity": "origin"
+          }
+        ],
+        "text": "directions to mcgill from 33 mctavish"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 10,
+            "end": 26,
+            "value": "44 mcgill street",
+            "entity": "destination"
+          }
+        ],
+        "text": "get me to 44 mcgill street"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 18,
+            "end": 36,
+            "value": "dollar-des-ormeaux",
+            "entity": "destination"
+          },
+          {
+            "start": 42,
+            "end": 57,
+            "value": "232 kirkland st",
+            "entity": "origin"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "value": "walk",
+            "entity": "method_of_transport"
+          }
+        ],
+        "text": "how can i walk to dollar-des-ormeaux from 232 kirkland st?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 10,
+            "end": 25,
+            "value": "juliette street",
+            "entity": "origin"
+          },
+          {
+            "start": 29,
+            "end": 42,
+            "value": "loyola campus",
+            "entity": "destination"
+          },
+          {
+            "start": 0,
+            "end": 4,
+            "value": "walk",
+            "entity": "method_of_transport"
+          }
+        ],
+        "text": "walk from juliette street to loyola campus"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 39,
+            "end": 62,
+            "value": "concordia loyola campus",
+            "entity": "destination"
+          },
+          {
+            "start": 20,
+            "end": 35,
+            "value": "crescent street",
+            "entity": "origin"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "value": "walk",
+            "entity": "method_of_transport"
+          }
+        ],
+        "text": "how can i walk from crescent street to concordia loyola campus?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 44,
+            "end": 63,
+            "value": "la belle et la bete",
+            "entity": "destination"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "value": "bus",
+            "entity": "method_of_transport"
+          },
+          {
+            "start": 19,
+            "end": 40,
+            "value": "juliette et chocolats",
+            "entity": "origin"
+          }
+        ],
+        "text": "how can i bus from juliette et chocolats to la belle et la bete?"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 21,
+            "end": 36,
+            "value": "mcyntire campus",
+            "entity": "destination"
+          }
+        ],
+        "text": "get me directions to mcyntire campus"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 6,
+            "end": 24,
+            "value": "laurier university",
+            "entity": "destination"
+          }
+        ],
+        "text": "go to laurier university"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 14,
+            "end": 25,
+            "value": "main street",
+            "entity": "destination"
+          }
+        ],
+        "text": "directions to main street"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 14,
+            "end": 31,
+            "value": "mcgill university",
+            "entity": "destination"
+          }
+        ],
+        "text": "directions to mcgill university"
+      },
+      {
+        "intent": "get_directions",
+        "entities": [
+          {
+            "start": 41,
+            "end": 45,
+            "value": "walk",
+            "entity": "method_of_transport"
+          },
+          {
+            "start": 27,
+            "end": 37,
+            "value": "buonanotte",
+            "entity": "destination"
+          },
+          {
+            "start": 12,
+            "end": 23,
+            "value": "cafe campus",
+            "entity": "origin"
+          }
+        ],
+        "text": "get me from cafe campus to buonanotte by walk"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

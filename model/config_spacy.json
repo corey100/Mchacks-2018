@@ -1,0 +1,7 @@
+
+{
+  "pipeline": "spacy_sklearn",
+  "path" : "/Users/Gustavo/Development/mchacks/textassistant/model",
+  "port": "80",
+  "data" : "/Users/Gustavo/Development/mchacks/textassistant/model/data.json"
+}

@@ -1,0 +1,6 @@
+
+{
+  "pipeline": "spacy_sklearn",
+  "path" : "/Users/Gustavo/Development/mchacks/textassistant/model",
+  "data" : "/Users/Gustavo/Development/mchacks/McHacks2018TextTravelAssistant/model/data.json"
+}
