@@ -4,9 +4,16 @@ import json
 from iso639 import languages #https://pypi.python.org/pypi/iso-639. Converts from normal text to ISO codes
 from forecastiopy import * #Using library https://github.com/bitpixdigital/forecastiopy3 and DarkSky API
 import re #for converting to plaintext from HTML
-subscription_key = "96d05359d76f4e758906539daeab939e" #for Bing search API
-assert subscription_key #for Bing search API
 import requests
+
+#API keys, you need to insert your own!
+bing_apikey = "" #for Bing search API
+translate_apikey = ""
+directions_apikey = ""
+weather_apikey = ""
+geocode_apikey = ""
+
+assert bing_apikey #for Bing search API
 
 #Gets weather.
 def getWeather(city):
@@ -17,14 +24,13 @@ def getWeather(city):
     query = urllib.parse.urlencode(toParse)
     
     #Gets latitude and longitude using google geocode API
-    json.html=urllib.request.urlopen("https://maps.googleapis.com/maps/api/geocode/json?" + query + "&key=AIzaSyAAt2ImDvmw7b499W5BvhZQZrsNz2_tzXw").read()
+    json.html=urllib.request.urlopen("https://maps.googleapis.com/maps/api/geocode/json?" + query + "&key=" + geocode_apikey).read()
     htmlData=json.loads(json.html)
     lat = (htmlData['results'][0]['geometry']['location']['lat'])
     lng = (htmlData['results'][0]['geometry']['location']['lng'])
    
-    apikey = "5d921d2f9ccd01477c132bd5c44de11f"
     City = [lat, lng]
-    fio = ForecastIO.ForecastIO(apikey, units=ForecastIO.ForecastIO.UNITS_SI, lang=ForecastIO.ForecastIO.LANG_ENGLISH, latitude=City[0], longitude=City[1])
+    fio = ForecastIO.ForecastIO(weather_apikey, units=ForecastIO.ForecastIO.UNITS_SI, lang=ForecastIO.ForecastIO.LANG_ENGLISH, latitude=City[0], longitude=City[1])
 
     if fio.has_currently() is True:
         currently = FIOCurrently.FIOCurrently(fio)
@@ -47,7 +53,7 @@ def translate(toTranslate, language):
     toParse = {"q" : query}
     query = urllib.parse.urlencode(toParse)
 
-    json.html=urllib.request.urlopen("https://translation.googleapis.com/language/translate/v2?" + query + "&target=" + target + "&key=AIzaSyBc97rvAIIzOj1RSo6py5cu_3CZV2esNhI").read()
+    json.html=urllib.request.urlopen("https://translation.googleapis.com/language/translate/v2?" + query + "&target=" + target + "&key=" + translate_apikey).read()
     htmlData=json.loads(json.html)
     result = (htmlData['data']['translations'][0]['translatedText'])
     return(result)
@@ -58,14 +64,12 @@ def getDirections(origin, destination, mode):
     try:
         toParse = {"origin" : origin, "destination" : destination, "mode" : mode}
         query = urllib.parse.urlencode(toParse)
-        #print(query)
         json.html=urllib.request.urlopen(
-        "https://maps.googleapis.com/maps/api/directions/json?"+query+"&key=AIzaSyBOOREKztY-ELF6qDjwqHZ0IVuTFZL4f-0").read()
+        "https://maps.googleapis.com/maps/api/directions/json?"+query+"&key=" + directions_apikey).read()
         resp=json.loads(json.html)
         data = ""
         cleanResp = ""
         for x in range(0,len(resp['routes'][0]['legs'][0]['steps'])):
-
                 data = (resp['routes'][0]['legs'][0]['steps'][x]['html_instructions'])
                 cleanData = re.sub(r'<.*?>', '', data)
                 cleanResp = cleanResp + '\n' + cleanData
@@ -81,15 +85,12 @@ def getDirections(origin, destination, mode):
 def getNews(location):
     search_url = "https://api.cognitive.microsoft.com/bing/v7.0/news/search"
     search_term = location
-    headers = {"Ocp-Apim-Subscription-Key" : subscription_key}
+    headers = {"Ocp-Apim-Subscription-Key" : bing_apikey}
     params  = {"q": search_term, "textDecorations": True, "textFormat": "HTML", "count" : '1', "offset" : '0'}
     response = requests.get(search_url, headers=headers, params=params)
     response.raise_for_status()
     search_results = response.json()
-
-    #print(search_results)
     descriptions = [article["description"] for article in search_results["value"]]
-    #print(descriptions[0])
     cleanResp = ""
     for x in range(len(descriptions)):
         data = (descriptions[x])
@@ -100,8 +101,3 @@ def getNews(location):
         cleanData = re.sub(r';', " ", cleanData)
 
     return(cleanResp)
-
-#print(getDirections('Montreal','Toronto','transit'))
-#print(getWeather("Buenos Aires"))
-#print(translate("Can you direct me? I'm lost!", "spanish"))
-#print(getNews("Maputo"))
